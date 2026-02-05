@@ -40,7 +40,7 @@
             <div class="map">
                 <p><iframe
                       src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d7182.17297235666!2d27.8895852!3d-25.8336953!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1e958139eff6c4b3%3A0x25011fb633919f0a!2sLiquid%20Adventures%20Gauteng%2C%20R512%20Broederstroom%2C%20Hartbeespoort%2C%200216!3m2!1d-25.8336953!2d27.8895852!5e0!3m2!1sen!2sza!4v1770327775466!5m2!1sen!2sza"
-                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      width="600" height="450" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe></p>
             </div>
 
@@ -55,17 +55,20 @@
 
                 <fieldset>
                     <legend>Message Purpose</legend>
-                    <label><input type="radio" name="purpose" value="general"> General
+                    <label><input type="radio" id="general" name="purpose" value="general"> General
                         Inquiry</label>
-                    <label><input type="radio" name="purpose" value="website"> Website
+                    <label><input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question</label>
+                    <label><input type="radio" id="website" name="purpose" value="website"> Website
                         Suggestion</label>
                 </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="user_message"></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to
+                    the monthly
                     newsletter</label>
 
                 <button type="submit"> Get in Touch!</button>
